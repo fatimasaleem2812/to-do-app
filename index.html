@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div id="mainDiv"><h1>TO DO APP</h1>
+        <div class="card text-center">
+            <div  class="card-header">
+                <div class="input-group ">
+                    <input type="text" id="todoItem" placeholder="Enter Task To do">
+                    <div class="input-group-append">
+                        <i class="fa fa-plus input-group-text" aria-hidden="true" onclick="addItem();"></i>
+                        <i class="fa fa-trash-o input-group-text" aria-hidden="true" onclick="delAll();" title="Delete All"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <ul id="tasks">
+
+                </ul>
+                <ul id="deleted">
+
+                </ul>
+            </div>
+            <div class="foot">
+               CREADTED BY FATIMA SALEEM
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+ 
+</body>
+
+</html>
